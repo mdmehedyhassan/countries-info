@@ -6,6 +6,7 @@ import {
   Route
 } from "react-router-dom";
 import NotFound from './components/NotFound/NotFound';
+import CountryDetails from './components/CountryDetails/CountryDetails';
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         </Route>
         <Route path="/home">
           <Home />
+        </Route>
+        <Route path="/country/:countryName">
+          <CountryDetails />
         </Route>
         <Route path="*">
           <NotFound />

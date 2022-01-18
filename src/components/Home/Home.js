@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import Countries from '../Countries/Countries';
 
 const Home = () => {
     const [countries, setCountries] = useState([]);
@@ -8,8 +9,12 @@ const Home = () => {
         .then(data => setCountries(data.data))
     },[]);
     return (
-        <div>
-            <h1>This is header: {countries.length}</h1>
+        <div className="container">
+            <div className="row">
+            {
+                countries.map(country => <Countries country={country}></Countries>)
+            }
+            </div>
         </div>
     );
 };

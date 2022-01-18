@@ -1,0 +1,13 @@
+.countries-style{
+    text-align: center;
+    margin: 3% 1%;
+    padding: 5%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px gray, -5px -5px 20px gray;
+}
+.countries-style img{
+    border-radius: 10px;
+}
+.countries-style:hover{
+    box-shadow: 5px 5px 20px black, -5px -5px 20px black;
+}
